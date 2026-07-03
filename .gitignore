@@ -1,0 +1,37 @@
+# Build output
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Visual Studio and Rider
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Local tooling
+.dotnet/
+.codex/
+.agents/
+TestResults/
+artifacts/
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Packages and publish output
+*.nupkg
+publish/
+releases/
+
+# Local UI test captures
+BetterHome/contextmenu-fixed.png
+BetterHome/dock-click-test.png
+BetterHome/dock-widgets-final.png
+BetterHome/functional-final.png
+BetterHome/settings-fixed.png

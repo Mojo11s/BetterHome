@@ -1,0 +1,19 @@
+﻿<Application x:Class="BetterHome.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:BetterHome"
+             Startup="Application_Startup">
+    <Application.Resources>
+        <SolidColorBrush x:Key="TextPrimary" Color="#F4F7FF"/>
+        <SolidColorBrush x:Key="TextMuted" Color="#A8B3CB"/>
+        <SolidColorBrush x:Key="Glass" Color="#C5101C35"/>
+        <SolidColorBrush x:Key="GlassStrong" Color="#E1111C36"/>
+        <SolidColorBrush x:Key="Line" Color="#3B79A6D8"/>
+        <Style TargetType="TextBlock"><Setter Property="FontFamily" Value="Segoe UI"/><Setter Property="Foreground" Value="{StaticResource TextPrimary}"/></Style>
+        <Style x:Key="GlassCard" TargetType="Border"><Setter Property="Background" Value="{StaticResource Glass}"/><Setter Property="BorderBrush" Value="{StaticResource Line}"/><Setter Property="BorderThickness" Value="1"/><Setter Property="CornerRadius" Value="13"/><Setter Property="Padding" Value="14"/></Style>
+        <Style x:Key="IconButton" TargetType="Button"><Setter Property="Foreground" Value="#E9EEFA"/><Setter Property="Background" Value="Transparent"/><Setter Property="BorderThickness" Value="0"/><Setter Property="Padding" Value="10,6"/><Setter Property="Cursor" Value="Hand"/><Setter Property="Template"><Setter.Value><ControlTemplate TargetType="Button"><Border Background="{TemplateBinding Background}" CornerRadius="7"><ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/></Border></ControlTemplate></Setter.Value></Setter></Style>
+        <Style TargetType="ToolTip"><Setter Property="Background" Value="#EE111B30"/><Setter Property="Foreground" Value="White"/><Setter Property="Padding" Value="8,5"/><Setter Property="BorderBrush" Value="#557DA6D8"/><Setter Property="BorderThickness" Value="1"/><Setter Property="Placement" Value="Top"/><Setter Property="HasDropShadow" Value="True"/><Setter Property="Template"><Setter.Value><ControlTemplate TargetType="ToolTip"><Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="7" Padding="{TemplateBinding Padding}"><ContentPresenter/></Border></ControlTemplate></Setter.Value></Setter></Style>
+        <Style TargetType="ContextMenu"><Setter Property="Background" Value="#F3141E34"/><Setter Property="Foreground" Value="White"/><Setter Property="BorderBrush" Value="#58769AC7"/><Setter Property="BorderThickness" Value="1"/><Setter Property="Padding" Value="5"/><Setter Property="HasDropShadow" Value="True"/><Setter Property="Template"><Setter.Value><ControlTemplate TargetType="ContextMenu"><Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="9" Padding="{TemplateBinding Padding}"><StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Cycle"/></Border></ControlTemplate></Setter.Value></Setter></Style>
+        <Style TargetType="MenuItem"><Setter Property="Foreground" Value="White"/><Setter Property="Background" Value="Transparent"/><Setter Property="Padding" Value="12,7"/><Setter Property="Cursor" Value="Hand"/><Setter Property="Template"><Setter.Value><ControlTemplate TargetType="MenuItem"><Border x:Name="MenuBackground" Background="{TemplateBinding Background}" CornerRadius="6" Padding="{TemplateBinding Padding}"><ContentPresenter ContentSource="Header"/></Border><ControlTemplate.Triggers><Trigger Property="IsHighlighted" Value="True"><Setter TargetName="MenuBackground" Property="Background" Value="#355685"/></Trigger><Trigger Property="IsEnabled" Value="False"><Setter Property="Opacity" Value=".45"/></Trigger></ControlTemplate.Triggers></ControlTemplate></Setter.Value></Setter></Style>
+    </Application.Resources>
+</Application>

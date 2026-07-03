@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\betterhome.ico</ApplicationIcon>
+    <Version>1.0.0-beta</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Authors>ziyad3laa</Authors>
+    <Description>BetterHome is an open-source customizable Windows desktop shell.</Description>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+  <ItemGroup>
+    <Resource Include="Assets\wallpaper.png" />
+    <Resource Include="Assets\betterhome.ico" />
+    <Resource Include="Assets\betterhome-icon-16.png" />
+    <Resource Include="Assets\betterhome-icon-32.png" />
+    <Resource Include="Assets\betterhome-icon-48.png" />
+    <Resource Include="Assets\betterhome-icon-64.png" />
+    <Resource Include="Assets\betterhome-icon-128.png" />
+    <Resource Include="Assets\betterhome-icon-256.png" />
+    <Resource Include="Assets\betterhome-icon-512.png" />
+  </ItemGroup>
+
+</Project>
